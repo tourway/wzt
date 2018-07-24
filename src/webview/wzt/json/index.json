@@ -1,0 +1,106 @@
+/* http://192.168.5.171:8080/wzt/api/getFunctionalModule */
+{
+    "result": [
+        {
+            "id": 1,
+            "names": "党务政务百宝箱",
+            "linkAddress": "",
+            "backAddress": null,
+            "parentModuleId": 0,
+            "iconUrl": "",
+            "state": 1,
+            "createDate": 1510728486000,
+            "sort": 1
+        },
+        {
+            "id": 2,
+            "names": "十九大精神",
+            "linkAddress": "",
+            "backAddress": null,
+            "parentModuleId": 0,
+            "iconUrl": "",
+            "state": 1,
+            "createDate": 1510728578000,
+            "sort": 2
+        },
+        {
+            "id": 3,
+            "names": "精准扶贫为民办事",
+            "linkAddress": "",
+            "backAddress": null,
+            "parentModuleId": 0,
+            "iconUrl": "",
+            "state": 1,
+            "createDate": 1510728604000,
+            "sort": 3
+        },
+        {
+            "id": 4,
+            "names": "文化小康学习园地",
+            "linkAddress": "",
+            "backAddress": null,
+            "parentModuleId": 0,
+            "iconUrl": "",
+            "state": 1,
+            "createDate": 1510728654000,
+            "sort": 4
+        },
+        {
+            "id": 5,
+            "names": "城乡社区发展治理",
+            "linkAddress": "",
+            "backAddress": null,
+            "parentModuleId": 0,
+            "iconUrl": "",
+            "state": 1,
+            "createDate": 1510728661000,
+            "sort": 5
+        },
+        {
+            "id": 6,
+            "names": "村务公开干群互动",
+            "linkAddress": "",
+            "backAddress": null,
+            "parentModuleId": 0,
+            "iconUrl": "",
+            "state": 1,
+            "createDate": 1510728712000,
+            "sort": 6
+        },
+        {
+            "id": 7,
+            "names": "产业发展",
+            "linkAddress": "",
+            "backAddress": null,
+            "parentModuleId": 0,
+            "iconUrl": "",
+            "state": 1,
+            "createDate": 1510728715000,
+            "sort": 7
+        },
+        {
+            "id": 8,
+            "names": "电商集市",
+            "linkAddress": "",
+            "backAddress": null,
+            "parentModuleId": 0,
+            "iconUrl": "",
+            "state": 1,
+            "createDate": 1510728761000,
+            "sort": 8
+        },
+        {
+            "id": 9,
+            "names": "基层政务无纸化办公",
+            "linkAddress": "",
+            "backAddress": null,
+            "parentModuleId": 0,
+            "iconUrl": "",
+            "state": 1,
+            "createDate": 1510728769000,
+            "sort": 9
+        }
+    ],
+    "msg": "操作成功！",
+    "code": 0
+}

@@ -1,0 +1,533 @@
+/*
+ * @Author: tom 
+ * @Date: 2017-03-15 09:33:36 
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2017-05-03 13:49:51
+ */
+@import '../../../lib/css/normalize.css';
+@import '../scss/iconfont.css';
+@import '../../../lib/scss/_utils.scss';
+@import '../../../lib/scss/_universal.scss';
+// @import img form '../../../lib/images/addressLine.png';
+
+/*解决屏幕点击元素出现底色*/
+a, button, input, div {
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+/* wrap */
+html,body{
+    height: 100%;
+    // transition: all .5s ease-in-out;
+}
+.wrap{
+  // position: absolute;
+  // top: 0;
+  // right: 0;
+  // bottom: 0;
+  // left: 0;
+  // z-index: 2;
+  // // max-width: 640px;
+  // margin: auto;
+  background: #fff;
+  -webkit-tap-highlight-color: transparent;
+  width: 100%;
+}
+
+/* 头部 */
+.header{
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  background: #fff;
+  position: fixed;
+}
+.header-m{
+  text-align: center;
+  &__title{
+    color: #000;
+    flex: 1;
+    @include px2rem(font-size,32px);
+  }
+  &-retuer{
+    color:#979797;
+  }
+  &-start__end{
+    flex-shrink: 0;
+    flex-grow: 0;
+    height: auto;
+    color: #979797;
+    @include px2rem(width,100px);
+  }
+  border-bottom: 1px solid #efefef;
+  @include px2rem(padding,10px,10px,11px,12px);
+  @include px2rem(height,80px);
+}
+
+/* 内容 */
+.content{
+   @include px2rem(padding-top,80px);
+   @include px2rem(padding-bottom,96px);
+  // position: absolute;
+  // // flex: 1;
+  // // height: 100%;
+  // bottom: 0;
+  // z-index: 100;
+  // right: 0;
+  // -webkit-overflow-scrolling: touch;
+  // overflow: auto;
+  // // bottom: 50px;
+  // left: 0;
+  // @include px2rem(top,101px);
+  // @include px2rem(bottom,98px);
+}
+.address{
+  position: relative;
+  @include px2rem(padding-top,20px);
+}
+.address-ul{
+  position: relative;
+  &__li{
+    display: flex;
+  }
+  @include px2rem(padding,25px,38px,28px,28px);
+}
+.address-add{
+  flex: 0;
+  width: 21px;
+  height: 27px;
+}
+.pl{
+  @include px2rem(padding,0px,28px);
+}
+.address-user{
+  // position: absolute;
+  top:0px;
+  flex: 0;
+  width: 21px;
+  height: 21px;
+}
+.address-add__table{
+  // display: table-cell;
+  // flex: 0.13;
+  line-height: 1.5;
+  @include px2rem(font-size,26px);
+  @include px2rem(width,80px);
+}
+.address-line{
+  width: 90%;
+  @include px2rem(height,2px);
+  background: #efefef;
+}
+.address-add__tel{
+  @include px2rem(margin-left,14px);
+}
+.address-add__info{
+  p{
+    flex:1;
+    @include px2rem(width,450px);
+    @include px2rem(font-size,26px);
+    @include px2rem(margin-bottom,8px);
+  }
+  P:nth-child(2){
+    @include px2rem(margin-bottom,13px);
+  }
+  // flex: 1;
+  // align-items: center;
+  @include px2rem(padding-top,20px);
+  @include px2rem(margin-left,15px);
+}
+.address-add__dd{
+  flex: 1;
+  padding: 0;
+}
+.adder-box{
+  width: 100%;
+}
+.address-add__p{
+  text-overflow:ellipsis;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-height:1.5;
+  @include px2rem(width,554px);
+  // @include px2rem(margin-top,13px);
+}
+.address-ul__icon{
+  color: #818181;
+  position: absolute;
+  right: 0px;
+  @include px2rem(top,78px);
+  @include px2rem(right,38px);
+}
+.address-Line__bg{
+  clear: both;
+  background: url('../../../lib/images/addressLine.png');
+  width: 100%;
+  border-bottom: 2px solid #EDEDED;
+  @include px2rem(height,6px);
+}
+
+/* order */
+.count-order{
+  @include px2rem(font-size,28px);
+  color: #000;
+  @include px2rem(height,80px);
+  border-bottom: 1px solid #EDEDED;
+}
+.count-order__offTheShelf{
+  p,span{
+    color:#bebebe !important;
+  }
+}
+.order-ft{
+  border-bottom: 3px solid #EDEDED;
+}
+.myc{
+  color:#dd4f1e;
+}
+.mycs{
+  @include px2rem(padding-left,8px);
+}
+.order-depot{
+  color: #818181;
+  @include px2rem(font-size,24px);
+}
+.order-count{
+  border-bottom: 8px solid #EDEDED;
+  @include px2rem(height,95px);
+}
+.order-count__last{
+  border-bottom: 1px solid #EDEDED;
+}
+.order-main{
+  display: -webkit-box;
+  border-bottom: 1px solid #EDEDED;
+  &:last-child{
+    border-bottom: 3px solid #EDEDED;
+  }
+  .order-offTheShelf{
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    height: 32px;
+    background: #000;
+    opacity: .4;
+    color: #fff;
+    P{
+      text-align: center;
+      width: 100%;
+      @include px2rem(font-size,28px);
+    }
+  }
+  @include px2rem(padding,20px);
+  &__img{
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    // overflow: hidden;
+    @include px2rem(margin-right,16px);
+    img{
+      border:1px solid #F1F1F1;
+      width: 100%;
+      height: 100%;
+    }
+    width:90px;
+    height:90px;
+  }
+  &__title{
+    text-overflow:ellipsis;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height:1.3;
+    @include px2rem(font-size,26px);
+    @include px2rem(margin-bottom,10px);
+  }
+  &__spe{
+    color: #818181;
+    text-overflow:ellipsis; 
+    overflow:hidden; 
+    white-space:nowrap; 
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    @include px2rem(font-size,26px);
+  }
+  &__info{
+    -webkit-box-flex: 1;
+  }
+  &__money{
+    .f{
+     @include px2rem(margin-top,30px);
+    }
+    .f__money{
+      color:#dd4f1e;
+      letter-spacing:-0.61px;
+      text-align:left;
+      @include px2rem(font-size,32px);
+    }
+    .f__number{
+      @include px2rem(font-size,26px);
+    }
+  }
+}
+.order-i{
+  border-bottom: 1px solid #EDEDED;
+  color:#000;
+  @include px2rem(height,80px);
+  @include px2rem(font-size,28px);
+}
+.order-mj{
+  color: #818181;
+  @include px2rem(font-size,28px);
+  @include px2rem(margin-left,15px);
+}
+
+/* wrap-footer */
+.wrap-footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: #fff;
+  border-top: 1px solid #EDEDED;
+  &__box{
+    width: 100%;
+    height: 100%;
+  }
+  @include px2rem(height,96px);
+  &__count{
+    flex:1;
+    width: 100%;
+    text-align: right;
+    @include px2rem(font-size,28px);
+    @include px2rem(margin-right,10px);
+  }
+  &__xc{
+    @include px2rem(margin-left,15px);
+  }
+  &__countM{
+    width: 100%;
+    text-align: right;
+    align-items:flex-end;
+    @include px2rem(font-size,28px);
+    @include px2rem(margin-right,15px);
+  }
+  &__my{
+    @include px2rem(margin-left,10px);
+  }
+  &__btn{
+    color: #dd4f1e;
+    background: #ffd3c5;
+    // border-radius
+    @include px2rem(border-radius,220px);
+    @include px2rem(padding,15px,54px);
+    @include px2rem(margin-right,20px);
+    @include px2rem(font-size,28px);
+  }
+  &__submit{
+    
+  }
+}
+.submit-shelf__btn{
+  background: #f5f5f5 !important;
+  color: #c1c1c1 !important;
+  pointer-events: none !important;
+}
+.order-msg{
+  @include px2rem(height,50px);
+  @include px2rem(font-size,28px);
+}
+.order-box__textarea{
+  flex: 1;
+  border-bottom: 14px solid #EDEDED;
+}
+.order-msg__textarea{
+  width: 100%;
+  text-overflow:ellipsis; 
+  overflow:hidden; 
+  // white-space:nowrap; 
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  outline: none;
+  resize: none;
+  color: #b0b0b0;
+  padding:0;
+  flex: 1;
+  @include px2rem(font-size,28px);
+  @include px2rem(height,54px);
+}
+
+/** order-pay **/
+.order-pay{
+  position: fixed;
+  transition: all .5s ease-in-out;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10000;
+  margin: auto;
+  background: #000;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  -webkit-tap-highlight-color: transparent;
+  &__box{
+    position: absolute;
+    z-index: 10002;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  &__in{
+    animation:slide .3s forwards;
+  }
+  &__out{
+    animation:slideOut .3s forwards;
+  }
+  &__main{
+    // width: 100%;
+    background: #fff;
+    @include px2rem(padding,15px);
+    @include px2rem(margin,10px);
+    @include px2rem(border-radius,20px);
+    @include px2rem(height,516px);
+  }
+}
+.order-header__del{
+    position: absolute;
+    top:0;
+    left: 10px;
+    @include px2rem(font-size,28px)
+}
+.order-header{
+  position: relative;
+  @include px2rem(height,80px);
+  border-bottom: 1px solid #EDEDED;
+  &__del{
+    font-size:1.4rem !important;
+  }
+  &__title{
+    text-align: center;
+    @include px2rem(font-size,32px);
+  }
+}
+.pay{
+  &-main__li{
+    color: #2c2c2c;
+    &:nth-child(1){
+      @include px2rem(margin-bottom,40px);
+    }
+    i{
+      @include px2rem(padding-right,24px);
+    }
+    .pay-zfb{
+      color: #009FE8;
+      @include px2rem(font-size,48px);
+    }
+    .pay-wx{
+      color: #58b202;
+      @include px2rem(font-size,48px);
+    }
+    @include px2rem(font-size,26px);
+  }
+  &-main{
+    border-bottom: 1px solid #EDEDED;
+    @include px2rem(padding,20px,0px,30px,30px);
+    &__icon{
+      // width: 18px;
+      // height: 18px;
+      @include px2rem(margin-right,22px);
+      @include px2rem(width,36px);
+      @include px2rem(height,36px);
+    }
+  }
+}
+.pay-money{
+  flex: 1;
+  text-align: right;
+  display: block;
+  &__pay{
+    @include px2rem(font-size,36px);
+    i{
+      @include px2rem(font-size,26px);
+    }
+    @include px2rem(margin-left,10px);
+  }
+  @include px2rem(font-size,28px);
+  @include px2rem(line-height,80px);
+  @include px2rem(height,80px);
+  @include px2rem(margin-bottom,110px);
+}
+.pay-submit__notPay{
+  pointer-events: none;
+}
+.pay-submit{
+  width: 100%;
+  background: #f5f5f5;
+  color: #c1c1c1;
+  &__sele{
+    color: #fff;
+    background: #e05b2e;
+  }
+  @include px2rem(font-size,28px);
+  @include px2rem(height,80px);
+  @include px2rem(border-radius,22px);
+}
+@-webkit-keyframes slide{
+    0%{
+      bottom:-500px;
+    }
+    100%{
+      bottom:0;
+    }
+}
+@-webkit-keyframes slideOut{
+    0%{
+      bottom:0;
+    }
+    100%{
+      bottom:-500px;
+    }
+}
+.order-pp{
+  position: fixed;
+  transition: all .5s ease-in-out;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10001;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/** loading css **/
+@import '../scss/loading.css';
+.loading{
+  position: fixed;
+  transition: all .5s ease-in-out;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10000;
+  margin: auto;
+  background: transparent;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+.loading-wrap{
+  position: absolute;
+  top:50%;
+  left: 50%;
+}

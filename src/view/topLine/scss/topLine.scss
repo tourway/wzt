@@ -1,0 +1,73 @@
+/*
+ * @Author: tourway 
+ * @Date: 2017-06-07 10:02:06 
+ * @Last Modified by: tourway
+ * @Last Modified time: 2017-07-05 11:19:51
+ */
+// @import '../../../lib/css/mui.min.scss';
+@import '../../../lib/css/normalize.css';
+@import '../../../lib/scss/_utils.scss';
+@import '../../../lib/scss/_universal.scss';
+
+$title:#1d1d1d;
+
+
+body{
+  --time:#9a9a9a;
+  --white:#fff;
+  --notList:#fe6905;
+}
+
+.ml20{
+  @include px2rem(margin-left,20px);
+}
+html,body{
+    height: 100%;
+}
+.content{
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1998;
+}
+
+.wrap{
+  height: 100%;
+}
+.topLine-list{
+  &__img{
+    width: 100%;
+    max-width: 100%;
+    border:0;
+    display: flex;
+    // height: 100%;
+    // @include px2rem(width,375px);
+    // @include px2rem(height,200px);
+  }
+  &__main{
+    background: var(--white);
+    @include px2rem(height,120px);
+    @include px2rem(margin-bottom,4px);
+  }
+  &__title{
+    line-height: 1.15;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    color: $title;
+    font-weight: normal;
+    @include px2rem(font-size,28px);
+    @include px2rem(margin,0px,20px,12px,20px);
+  }
+  &__time{
+    color: var(--time);
+    @include px2rem(font-size,24px);
+  }
+}
+.topLine-list__not{
+  color: var(--notList);
+  @include px2rem(font-size,28px);
+  @include px2rem(padding-top,322px);
+}

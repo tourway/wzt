@@ -1,0 +1,49 @@
+/*
+ * @Author: tom 
+ * @Date: 2017-11-10 17:10:06 
+ * @Last Modified by: jerry
+ * @Last Modified time: 2018-02-06 11:50:38
+ */
+.baoshengcun{
+ // header
+ &-logo{
+  padding-left: 66px;
+  margin-bottom: 60px;
+  // @include px2rem(padding-left,36px);
+  // @include px2rem(padding-bottom,128px);
+ }
+ &-title{
+  color: $baoshengcun;
+  font-size: 40px;
+  padding-left: 31px;
+  // @include px2rem(font-size,40px);
+  // @include px2rem(padding-left,32px);
+ }
+ // footer
+ &-footer{
+  position: fixed;
+  bottom: 50px;
+  right: 37px;
+  z-index: 999999999;
+  // @include px2rem(bottom,50px);
+  // @include px2rem(right,37px);
+  a{
+    display: inline-flex;
+  }
+ }
+ &-iconFooter{
+  color:$baoshengcun;
+  font-size: 55px;
+  // @include px2rem(font-size,55px);
+ }
+ &-icon__home{
+  margin-left: 80px;
+  // @include px2rem(margin-left,40px);
+ }
+}
+.header-time{
+  font-size: 30.9px;
+  color:$baoshengcun;
+  font-weight: bold;
+  display: block;
+}

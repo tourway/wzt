@@ -1,0 +1,24 @@
+/*
+ * @Author: tom 
+ * @Date: 2017-12-22 17:20:17 
+ * @Last Modified by:   jerry 
+ * @Last Modified time: 2017-12-22 17:20:17 
+ */
+$root-font-size:10 !default;
+
+@mixin px2rem($property, $paramArr...) {
+  $remArr: ();
+  $pxArr: ();
+  $len: length($paramArr);
+
+  @for $i from 1 through $len {
+    $px: nth($paramArr, $i);
+    $rem: (($px / 1px) / (2 * $root-font-size)) * 1rem;
+
+    $pxArr: append($pxArr, $px);
+    $remArr: append($remArr, $rem);
+  }
+
+  #{$property}: #{$pxArr};
+  #{$property}: #{$remArr};
+}

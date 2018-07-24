@@ -1,0 +1,98 @@
+@import "./_variables.scss";
+
+@font-face {
+  font-family: 'news-icon';
+  src:
+    url('#{$font-path}/news-icon.ttf?3zx1ww') format('truetype'),
+    url('#{$font-path}/news-icon.woff?3zx1ww') format('woff'),
+    url('#{$font-path}/news-icon.svg?3zx1ww#news-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'news-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-del-pic {
+  &:before {
+    content: $icon-del-pic;
+  }
+}
+.icon-turn-right {
+  &:before {
+    content: $icon-turn-right;
+  }
+}
+.icon-submit {
+  &:before {
+    content: $icon-submit;
+  }
+}
+.icon-list {
+  &:before {
+    content: $icon-list;
+  }
+}
+.icon-repulse {
+  &:before {
+    content: $icon-repulse;
+  }
+}
+.icon-plus {
+  &:before {
+    content: $icon-plus;
+  }
+}
+.icon-cross {
+  &:before {
+    content: $icon-cross;
+  }
+}
+.icon-auditing {
+  &:before {
+    content: $icon-auditing;
+  }
+}
+.icon-undo {
+  &:before {
+    content: $icon-undo;
+  }
+}
+.icon-add-people {
+  &:before {
+    content: $icon-add-people;
+  }
+}
+.icon-add-picture {
+  &:before {
+    content: $icon-add-picture;
+  }
+}
+.icon-adopt {
+  &:before {
+    content: $icon-adopt;
+  }
+}
+.icon-change {
+  &:before {
+    content: $icon-change;
+  }
+}
+.icon-edit {
+  &:before {
+    content: $icon-edit;
+  }
+}
+

@@ -1,0 +1,37 @@
+/*
+ * @Author: tourway 
+ * @Date: 2017-06-14 11:25:19 
+ * @Last Modified by: tourway
+ * @Last Modified time: 2017-06-15 17:50:05
+ */
+
+@import '../../../lib/css/normalize.css';
+@import '../../../lib/scss/_utils.scss';
+@import '../../../lib/scss/_universal.scss';
+
+$titleColor:#797979;
+$timeColor:#e1e1e1;
+
+
+.wrap{
+  @include px2rem(padding,0px,20px);
+}
+.topLineDetails{
+  &-main{
+    @include px2rem(margin-top,20px);
+    @include px2rem(margin-bottom,20px);
+  }
+  &-title{
+    // color: $titleColor;
+    font-weight: normal;
+    @include px2rem(font-size,28px);
+  }
+  &-time{
+    // color: $timeColor;
+    @include px2rem(font-size,24px);
+  }
+  img{
+    max-width: 100%;
+    border: 0;
+  }
+}

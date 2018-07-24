@@ -1,0 +1,21 @@
+{
+  "errcode": 1,
+  "errmsg": "succ",
+  "data": {
+      "goods_ids": "260,230,250,265,266,264,263,262,148,97,129,107",
+      "brand": [
+          "The whoo/后|66",
+          "SULWHASOO/雪花秀|48",
+          "SUM37˚/苏秘37˚|49",
+          "Innisfree/悦诗风吟|45",
+          "HERA|51",
+          "LANEIGE/兰芝|50",
+          "SNP|56",
+          "Dr.jart/蒂佳婷|55",
+          "Banila co./芭妮兰|62",
+          "VDL|63",
+          "AHC|53",
+          "Its skin/伊思|52"
+      ]
+  }
+}

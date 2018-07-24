@@ -1,0 +1,177 @@
+/*
+ * @Author: tom 
+ * @Date: 2017-11-10 14:03:35 
+ * @Last Modified by: jerry
+ * @Last Modified time: 2018-02-02 14:34:30
+ */
+
+ $baoshengcun:#b93837;
+ $iconColor:#fcf4f0;
+ $title:#565656;
+ $titleFontSize:30px;
+
+
+@import '../../../lib/font/iconfont.css';
+@import '../../../lib/scss/_utils.scss';
+@import '../../../lib/scss/_universal.scss';
+@import '../../../lib/scss/_animate.scss';
+// @import '../../../lib/js/swiper/animate.min.css';
+@import '../../../lib/js/swiper/swiper-3.4.2.min.css';
+@import './hfcommon.scss';
+@import './crossScreen.scss';//横屏
+
+body,html{
+  // max-width: 1080px;
+  height: 100%;
+  -webkit-touch-callout: none;  
+  -webkit-user-select: none;  
+  -khtml-user-select: none;  
+  -moz-user-select: none;  
+  -ms-user-select: none;  
+  user-select: none; 
+}
+//滚动条style
+.boxScrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.boxScrollbar::-webkit-scrollbar-thumb {
+  background-color: $baoshengcun;
+  border-radius: 8px;
+}
+//滚动条style end
+.active{
+  background: $baoshengcun !important;
+  color:#fff !important;
+  transition: all .5s ease;
+}
+//百宝箱
+.baoshengcun-main__link{
+  
+}
+//百宝箱 end
+//渐变
+.component-fade-enter-active, .component-fade-leave-active {
+  transition: opacity .3s ease;
+}
+.component-fade-enter, .component-fade-leave-to
+/* .component-fade-leave-active for below version 2.1.8 */ {
+  opacity: 0;
+}
+//渐变 end
+//分页
+.footer{
+  width: 35%;
+  justify-content: space-between;
+  margin: 0 auto;
+ }
+ .footer-btn{
+  transition: color .3s ease;
+  width: 137px;
+  height: 70px;
+  // margin-left: 91px;
+  background: $baoshengcun;
+  font-size: 26px;
+  color: #fff;
+  border-radius: 12px;
+ }
+ .footer-btn:first-child{
+  margin-left: 0px;
+ }
+ .pointerEvents{
+  transition: color .3s ease;
+  pointer-events: none!important;
+  color: #fff!important;
+  background: #d87878 !important;
+ }
+ .rdfz-ss,.rdfz-sd{
+   width: 100%;
+ }
+//分页 end
+
+@media only screen  and (max-width:1919px) and (min-width: 1080px){
+  .baoshengcun-weather{
+    display: none !important;
+  }
+  .bbx-icon{
+    display: none !important;
+  }
+  .sjd-main{
+    display: none !important;
+  }
+  .rdfz-sd{
+    display: none !important;
+  }
+  .crdsq-box{
+    display: none !important;
+  }
+  .icon-right{
+    display: none !important;
+  }
+  .wgh-ul-r{
+    display: none !important;
+  }
+  .wgh-s{
+    display: none !important;
+  }
+  .cs-icon{
+    display: none !important;
+  }
+  .gqhd-s{
+    display: none !important;
+  }
+  .thems-r{
+    display: none !important;
+  }
+  .rdd-r{
+    display: none !important;
+  }
+  .compss-rr{
+    display:none !important;
+  }
+}
+
+@media only screen and (min-width: 1081px) and (max-width:2560px){
+  .baoshengcun-logo{
+    margin-bottom: 49px;
+  }
+  .sjd-box{
+    display: none !important;
+  }
+  .active{
+    background: #DDAB99 !important;
+    color:#fff !important;
+    transition: all .5s ease;
+  }
+  .rdfz-ss{
+    display: none !important;
+  }
+  .srdsq-box{
+    display: none !important;
+  }
+  .rdd-s{
+    display: none !important;
+  }
+  .wzinfo-main{
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .wgh-ul-s{
+    display: none !important;
+  }
+  .wgh-r{
+    display: none !important;
+  }
+  .gqhd-r{
+    display: none !important;
+  }
+  .thema-s{
+    display:none !important;
+  }
+  .compss-dd{
+    display:none !important;
+  }
+}

@@ -1,0 +1,17 @@
+@import '../../../lib/scss/_utils.scss';
+
+html{
+  //  font-family: '微软雅黑'
+}
+
+.container{
+  @include px2rem(padding,20px,0px,0px,0px);
+  box-sizing: border-box;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+}
+
+/*解决屏幕点击元素出现底色*/
+a, button, input, div {
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}

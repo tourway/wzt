@@ -1,0 +1,1821 @@
+// 横屏 1920 * 1080 screen and (min-width:768px) and (max-width:991px)
+// @media only screen and (min-width: 1920px){
+  // alert
+  .week-alert {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      background-color:rgba(178, 69, 71, 0.49);
+      color: #fff;
+      padding: 9px 20px;
+      font-size: 30px;
+      z-index: 999;
+      border-radius: 20px 20px 0 0;
+      &.alert-show {
+          animation: show 2s;
+      }
+      @keyframes show {
+          0% {
+            transform: translateY(-100%);
+          }
+          20% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(0);
+          }
+          80% {
+            transform: translateY(0);
+          }
+          100% {
+            transform: translateY(-100%);
+          }
+      }
+  }
+  // alert
+  //登录页
+  .login{
+    max-width: 1920px;
+    height: 100%;
+    background-image: url('../../../lib/images/bsc/login-Bg.jpg');
+    background-size: cover;
+    background-position: 100%;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    overflow-x: auto;
+    &-main{
+      width: 840px;
+      position: relative;
+      top: 36px;
+      padding: 33px 58px 77px;
+      margin: 0 auto;
+      background: white;
+      box-shadow: 0px 5px 44px 12px rgba(178, 69, 71, 0.49);
+      border-radius: 20px;
+    }
+    &-b{
+      margin-bottom: 40px;
+    }
+    .error{
+      border: solid 2px #c04346 !important;
+    }
+    &-logo{
+      margin-right: 18px;
+    }
+    &-title{
+      font-size: 47px;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 40px;
+      letter-spacing: 2px;
+      color: #c04346;
+    }
+    .sd{
+      font-size: 32px;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 40px;
+      letter-spacing: 1px;
+      color: #c04346;
+    }
+    .in-b{
+      margin-bottom: 46px;
+      &:last-child{
+        margin-bottom: 58px;
+      }
+    }
+    .ds-s{
+      display: inline-block;
+      margin:0px 18px;
+    }
+    .in{
+      width: 555px;
+      height: 63px;
+      padding-left: 10px;
+      border-radius: 7px;
+      border: solid 2px #cccccc;
+      font-size: 33px;
+    }
+    .in-btn{
+      width: 500px;
+	    height: 83px;
+      font-size: 37px;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 40px;
+      letter-spacing: 1px;
+      color: #ffffff;
+      background: #a01515;
+      background-image: linear-gradient(0deg,#a01515 0%,#e25555 100%);
+      border-radius: 20px;
+      cursor: pointer;
+    }
+  }
+  
+ // 首页 
+.baoshengcun-logo__main img{
+ width: 110px;
+ height: 110px;
+}
+.baoshengcun-main__bbxindex{
+  padding:46px 130px 0px 250px;
+  .bbx-flex{
+    width: 100%;
+    margin-bottom: 150px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+.main .main, .main .index {
+  box-sizing: border-box;
+  height: 100%;
+//  min-height: 1050px;
+}
+.main .main{
+ background: url('../../../lib/images/bsc/CrossScreen.jpg') white !important;
+}
+.main .index{
+ background: url('../../../lib/images/bsc/CrossScreen.jpg') white !important;
+}
+.baoshengcun{
+ &-index{
+  box-sizing: border-box;
+  height: 100%;
+  padding-top: 30px;
+ }
+ &-main{
+  margin: 58px 227px 0 285px;
+  .flex-b{
+    margin-bottom: 95px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+   }
+ }
+ &-item{
+  background: $baoshengcun;
+  width: 325px;
+  height: 183px;
+  border-radius: 18px;
+  box-sizing: border-box;
+  
+ }
+ &-icon{
+  display:block;
+  color:$iconColor;
+  font-size: 55px;
+  margin-bottom: 24px;
+ }
+ &-item:nth-child(7),&-item:nth-child(8),&-item:nth-child(9){
+  margin-bottom: 0px;
+ }
+ &-item__title{
+  color: $iconColor;
+  font-size: 30px;
+  font-weight: bold;
+ }
+}
+.index-box{
+ margin-bottom: 0;
+}
+.index-box:nth-child(7),.index-box:nth-child(8),.index-box:nth-child(9){
+ margin-bottom: 0px;
+}
+// 首页 end
+
+//百宝箱首页
+ .main .index{
+   background: url('../../../lib/images/bsc/CrossScreenb.jpg') !important;
+ }
+ .main .sjd-index{
+  background: url('../../../lib/images/bsc/sgargdaregb.jpg') !important;
+ }
+ .baoshengcun-main__link{
+   width: 327px;
+   height: 96px;
+   border-radius: 18px !important;
+   font-size: 30px;
+ }
+ .baoshengcun-footer{
+  bottom: 100px !important;
+ }
+ .sjd-index .baoshengcun-footer{
+  bottom: 40px !important;
+ }
+//百宝箱首页 end??
+//党的组织
+.bsc-ul{
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  margin-bottom: 50px;
+  // width: 100%;
+  position: fixed;
+  left: -2px;
+  bottom: 60px;
+  // width: 24%;
+}
+.bsc-li{
+  width: 310px;
+  height: 77px;
+  color: #b93837;
+  font-size: 24px;
+  border-bottom: none;
+  background: white;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  border-radius: 13px;
+  // margin-bottom: -1px;
+  box-shadow: 0px 5px 38px 0px rgba(121, 37, 37, 0.23);
+}
+.bsc-li:first-child{
+  border-top-left-radius: 8px;
+}
+.bsc-li:last-child{
+  border-bottom-left-radius: 8px;
+}
+.baoshengcun-main__bbx{
+  margin:13px 115px;
+  .bbx-flex{
+    margin-bottom: 50px;
+    &:last-child{
+      // margin-bottom: 0;
+    }
+  }
+  .bsc-wzinfo__box{
+    margin-bottom: 50px;
+  }
+  .sjdjs-ul-main{
+    // height: 700px;
+    max-height: 700px;
+    overflow-y: auto;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    position: relative;
+    left: -310px;
+    z-index: 9;
+  }
+}
+.baoshengcun-iconFooter{
+  font-size: 90px !important;
+}
+.baoshengcun-main__list{
+  color: white;
+  background: $baoshengcun;
+  width: 327px;
+  height: 96px;
+  border-radius: 18px !important;
+  font-size: 30px;
+}
+.baoshengcun-main__list a{
+  color: white;
+}
+.sjdjs-ul{
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  margin-bottom: 50px;
+  // width: 100%;
+  position: fixed;
+  left: -2px;
+  bottom: 35px;
+  z-index: 10;
+  .sjdjs-ul-main{
+    // height: 700px;
+    max-height: 700px;
+    overflow-y: auto;
+    transition: all .5s ease;
+    position: relative;
+    left: -310px;
+  }
+}
+.sjd-li{
+  transition: all .5s ease;
+  position: relative;
+  // left:-310px;
+}
+.bbx-icon{
+  margin-right: 38px;
+  font-size: 38px;
+  color: white;
+}
+.bsc-labor__title{
+  font-size: 52px;
+  margin-bottom:10px;
+  color:$baoshengcun;
+}
+.labor-list{
+  font-family: 'PingFang SC';
+  font-size: 28px;
+  color: $title;
+}
+.labor-box{
+  margin-top:60px;
+}
+.labor-img{
+  width: 180px;
+  height: 240px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+.bsc-labor{
+  word-wrap: break-word;
+  word-break: break-all;
+  box-sizing: content-box;
+  width: 1124px;
+  height: 590px;
+  padding:10px;
+	background-color: #fff;
+  max-height: 672px;
+  line-height: 1;
+  font-size: 26px;
+  color:$title;
+  box-shadow: 0px 8px 27px 1px rgba(110, 110, 110, 0.55);
+  border-radius: 20px;
+  overflow-y: auto;
+  p > img{
+    // width: 100%;
+  }
+}
+// .bsc-labor p img{
+//   width: 100%;
+//   max-width: 100%;
+// }
+.bsc-labor::-webkit-scrollbar {
+    width:8px;
+    height:8px;
+}
+.bsc-labor::-webkit-scrollbar-thumb {
+  background-color: $baoshengcun;
+  border-radius: 8px;
+}
+.bsc-li__wzinfo,.zzActivity-li{
+  width: auto;
+  height: 77px;
+  color: $baoshengcun;
+  font-size:24px;
+  border-bottom: none;
+  background: white;
+  transition: all .5s ease;
+  border-radius: 13px;
+  // margin-bottom: -1px;
+  box-shadow: 0px 5px 38px 0px rgba(121, 37, 37, 0.23);
+}
+.classification{
+  margin-left:-60px;
+  width: 310px;
+  height: 77px;
+  background: $baoshengcun;
+  font-size: 30px;
+  transition: all .5s ease;
+  box-sizing: border-box;
+  margin-bottom: -1px;
+  box-shadow: 0px 5px 38px 0px rgba(121, 37, 37, 0.23);
+  border-radius: 13px;
+  color: white;
+  // -webkit-animation-name:'wobble';/*动画属性名，也就是我们前面keyframes定义的动画名*/ 
+  // -webkit-animation-duration: .4s;/*动画持续时间*/ 
+  // -webkit-animation-timing-function: ease-in-out; /*动画频率，和transition-timing-function是一样的*/ 
+  // -webkit-animation-delay: 0s;/*动画延迟时间*/ 
+  // -webkit-animation-iteration-count: 1;/*定义循环资料，infinite为无限次*/ 
+  // -webkit-animation-direction: alternate;/*定义动画方式*/
+  animation:'wobble' .35s 0s 1 ease-in-out alternate;
+  position: relative;
+  z-index: 10;
+}
+@-webkit-keyframes wobble {
+  0% {
+     margin-left: -288px;
+  }
+  100% {
+    margin-left: -60px;
+  }
+}
+.bsc-wzinfo__title{
+  font-size: 52px;
+  margin:30px 0;
+  color:$baoshengcun;
+}
+.sjd-icon-more{
+  margin-left: 10px;
+  color: white;
+  font-size: 25px;
+  margin-top: 6px;
+}
+.sjd-icon-s{
+  margin-right: 42px;
+}
+.wzinfo-list{
+  margin-left: 53px;
+  font-family: 'PingFang SC';
+  font-size: 28px;
+  color: $title;
+  margin-bottom: 20px;
+}
+.wzinfo-main__ul{
+ width: 100%;
+}
+.wzinfo-box{
+  // margin-top:60px;
+}
+.lo-s{
+  margin-right:10px;
+  width: 498px;
+	height: 610px;
+	background-color: #fff;
+  box-shadow: 0px 8px 27px 1px rgba(110, 110, 110, 0.55);
+  border-radius:20px;
+}
+.wzinfo-img{
+  width: 171px;
+  height: 226px;
+  min-width:171px;
+  margin: 35px 0 19px 64px;
+  object-fit: cover;
+}
+.bsc-wzinfo{
+  width: 1691px;
+	height: 715px;
+	background-color: #ffffff;
+  word-wrap: break-word;
+  word-break: break-all;
+  box-sizing: border-box;
+  padding:10px;
+  box-shadow: 10px 7px 21px 2px rgba(128, 27, 27, 0.27);
+  border-radius: 20px;
+  overflow-y: auto;
+}
+.bsc-wzinfo-e{
+  width: 1691px;
+	height: 715px;
+	min-height: 715px;
+	background-color: #ffffff;
+  word-wrap: break-word;
+  word-break: break-all;
+  box-sizing: border-box;
+  padding:10px;
+  // box-shadow: 10px 7px 21px 2px rgba(128, 27, 27, 0.27);
+  border-radius: 20px;
+  overflow-y: auto;
+}
+.bsc-wzinfo-l{
+  height: auto;
+  max-height: 760px;
+}
+.bsc-wzinfo-l{
+  background-color:transparent !important;
+}
+.bsc-wzinfo__content{
+  margin-top:20px;
+}
+//党的组织 end
+//党员信息列表
+.dylist-list,.themjf-lit{
+margin-bottom: 32px;
+line-height: 1;
+width: 100%;
+/* display: -webkit-inline-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 4;
+overflow: hidden; */
+}
+.rdfzlist-ul{
+  .rdfzd-list{
+    width: 100%;
+    display: -webkit-inline-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    margin-bottom: 16px;
+    &:last-child{
+      margin-bottom: 0px;
+    }
+  }
+}
+.themjf-lit{
+  margin-bottom: 16px;
+  line-height: 1;
+  width: 100%;
+  &:last-child{
+    margin-bottom: 0px;
+  }
+}
+.dylist-dy,.dylist-info,.dylist-ul{
+ width: 100%;
+ box-sizing: border-box;
+}
+.dylist-first{
+  // width: 57%;
+  // display: inline-block;
+}
+.dylist-ul li:first-child{
+  padding-top:25px;
+}
+.dylist-xx{
+color: $baoshengcun;
+font-size: 32px;
+}
+.dylist-title{
+width: 100%;
+color:$baoshengcun;
+font-size: 44px;
+font-weight: bold;
+margin:80px 0px 51px 0px;
+}
+.dylist-img{
+  width: 163px;
+  min-width: 163px;
+  height: 216px;
+  margin:23px 41px 0 36px;
+  object-fit: cover;
+}
+.baoshengcun-main__dylist{
+  margin:0px 94px;
+  .dylist-flex{
+    margin-bottom: 90px;
+  }
+  .dylist-info{
+    width: 508px;
+  }
+  .dylist-box{
+    padding:18px 26px;
+    width: 800px;
+    height: 295px;
+    box-shadow: 0px 8px 27px 1px rgba(110, 110, 110, 0.18);
+    border-radius: 20px;
+    background: white;
+    box-sizing: border-box;
+  }
+}
+.kcinfo-box{
+line-height: 1.8;
+font-size: 30px;
+color:$title;
+background: white;
+overflow-y: auto;
+}
+.kcinfo{
+width: 100%;
+padding:18px;
+height: 204px;
+margin-bottom: 28px;
+}
+.rdfz-first{
+width: 381px;
+}
+.rdfz-xx{
+color: $baoshengcun;
+font-size: 32px;
+}
+.rdfz-title{
+  width: 100%;
+  color:$baoshengcun;
+  font-size: 44px;
+  font-weight: bold;
+  margin:80px 0px 77px 0px;
+}
+.userInfo{
+  width: 205px;
+  height: 62px;
+  color: #fffefe;
+  font-size: 32px;
+  text-align: center;
+  background: $baoshengcun;
+  margin-bottom: 22px;
+  border-radius: 20px;
+}
+.userInfo-content{
+  width: 600px;
+  max-width: 600px;
+  overflow: hidden;
+}
+.userInfo-wf{
+  margin: 15px 0;
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+.poorinfo-cc{
+  width: 310px !important;
+}
+.poorinfo-tel{
+  font-size: 26px;
+  color:$baoshengcun;
+  font-weight: bold;
+}
+.rdfz-box{
+// margin: 0px auto 39px;
+width: 774px;
+height: 216px;
+padding:28px 0px 28px 45px;
+border-radius: 20px;
+background: white;
+}
+.rdfz-box:last-child{
+// padding-bottom: 0px;
+}
+.ds-oo{
+  width: 793px !important;
+	height: 580px !important;
+}
+.rdfz-img{
+width: 163px;
+height: 216px;
+min-width: 163px;
+margin-right: 34px;
+object-fit: cover;
+}
+.baoshengcun-main__rdfz{
+  margin:0px 65px;
+  .kcinfo-box{
+    padding-right: 28px;
+    p{
+      padding-right: 20px;
+    }
+    .userInfo-time{
+      font-size: 24px;
+      width: 140px;
+      min-width: 140px;
+    }
+  }
+  .fdf-s{
+    padding-top: 22px;
+  }
+}
+.baoshengcun-main__rdsq{
+  margin:0px 131px;
+}
+.baoshengcun-main__rdfzInfo{
+  margin:38px 168px 80px 168px;
+  .kcinfo-info{
+    font-size: 30px;
+  }
+}
+//党员信息列表 end
+//入党分子list
+.rdfz-info,
+.rdfzInfo-info,
+.rdsq-info,
+.first,
+.themjf-box__last{
+font-size:22px;
+color:$title;
+}
+.rdfzList-info,.dylist-info{
+  font-size:30px;
+  color:$title;
+}
+.poor-span{
+  font-weight: bold;
+}
+.dyinfo-dd{
+  width: 895px;
+}
+.poor-dd{
+  margin-bottom: 45px;
+}
+.poor-dd__first{
+  margin-right: 130px;
+}
+.rdfzList-list:last-child,
+.kcinfo:last-child,
+.dylist-list:last-child,
+.rdfz-list:last-child,
+.baoshengcun-main__listB2b:last-child,
+.kcinfoWz:last-child,
+.kcinfo-rdsq:last-child,
+.rdsq-list:last-child,
+.rdsq-box:last-child,
+.rdfzInfo-list:last-child{
+margin-bottom: 0px;
+}
+.rdfzList-first{
+width: 381px;
+}
+.rdfzList-xx{
+color: $baoshengcun;
+font-size: 32px;
+}
+.rdfzList-title{
+width: 100%;
+color:$baoshengcun;
+font-size: 44px;
+font-weight: bold;
+margin:80px 0px 44px 0px;
+}
+.rdfzList-img{
+width: 195px;
+height: 250px;
+margin-right: 53px;
+}
+.rdfz-box__main,.rdfzList-info{
+//  width: 100%;
+}
+.rdfzList-info{
+ overflow-y: auto;
+ height: 250px;
+ width: 462px;
+}
+.rdfzlist-ul{
+//  width: 100%;
+}
+.baoshengcun-main__rdfzList{
+margin:0px 94px;
+.rdfzList-flex{
+  margin-bottom: 90px;
+  &:last-child{
+    margin-bottom: 70px;
+  }
+}
+.rdfz-box__main{
+  width: 100%;
+  box-sizing: border-box;
+}
+}
+.rdfzList-box{
+  width: 800px;
+	box-sizing: border-box;
+  height: 300px;
+	background-color: #ffffff;
+	box-shadow: 0px 8px 27px 1px rgba(110, 110, 110, 0.18);
+  // margin: 0px auto 39px;
+  padding:28px 45px 0px 45px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+//入党分子list end
+//入党分子info
+.kcinfo-info{
+  width: 100%;
+  box-sizing: border-box;
+  padding:25px;
+  height: 616px;
+  overflow-y: auto;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 27px 1px rgba(110, 110, 110, 0.18);
+  border-radius: 20px;
+}
+.rdfz-info{
+  width: 74%;
+  height: 216px;
+ overflow-y: auto;
+}
+.rdfz-info__dyinfo{
+ width: 100%;
+ height: 100%;
+}
+.rdfz-info 
+.rdfzInfo-first{
+width: 381px;
+}
+.rdfzInfo-xx{
+color: $baoshengcun;
+font-size: 32px;
+}
+.rdfzInfo-bo__main{
+ width: 100%;
+}
+.rdfzInfo-info{
+ width: 100%;
+ height: 300px;
+ max-height: 300px;
+ overflow: hidden;
+ overflow-y: auto;
+}
+.rdfzInfo-title{
+width: 100%;
+color:$baoshengcun;
+font-size: 44px;
+font-weight: bold;
+margin:80px 0px 77px 0px;
+}
+.rdd-r{
+  width: 1582px;
+  box-sizing: border-box;
+}
+.ss-ff{
+  width: 500px;
+  margin-right: 24px;
+  box-sizing: border-box;
+}
+.ff-ss{
+  width: 1060px;
+  box-sizing: border-box;
+}
+.rdfzInfo-box{
+  width: 100%;
+  height: 616px;
+  box-sizing: border-box;
+  margin: 0px auto 70px;
+  padding:0 45px 0px 45px;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 27px 1px rgba(110, 110, 110, 0.18);
+  border-radius: 20px;
+}
+.rdfzInfo-box:last-child{
+padding-bottom: 0px;
+}
+.rdfzInfo-img{
+  width: 172px;
+  min-width: 172px;
+  height: 230px;
+  min-height: 230px;
+  margin:35px 0 19px 0px;
+  object-fit:cover;
+}
+.rdfzList-list{
+  font-size: 30px;
+}
+//入党分子info end
+//入党申请
+
+.rdsq-list{
+  margin-bottom: 24px;
+}
+.rdfzList-list{
+  margin-bottom: 17px;
+}
+.rdfzInfo-list{
+  font-size: 28px;
+  margin-bottom: 33px;
+}
+.rdsq-box{
+margin-bottom: 41px;
+}
+.crdsq-box{
+  width: 842px;
+  height: 742px;
+  overflow: hidden;
+  -webkit-border-radius:20px;
+  border-radius: 20px;
+}
+.crdsq-box img{
+  width: 100%;
+  max-width: 100%;
+  -webkit-border-radius:20px;
+  border-radius: 20px;
+}
+.kcinfo-box{
+  line-height: 1.8;
+  font-size: 30px;
+  color:$title;
+  background: white;
+  width: 774px;
+  padding: 28px 0px 28px 28px;
+  border-radius: 25px;
+  height: 216px;
+  overflow-y: auto;
+}
+.dyinfo-dd{
+  .kcinfo-box{
+    height: 200px;
+  }
+}
+.kcinfo-boxs{
+  line-height: 1.8;
+  font-size: 30px;
+  color:$title;
+  background: white;
+  width: 797px;
+  padding: 28px 0px 28px 28px;
+  border-radius: 25px;
+  height: 190px;
+  overflow-y: auto;
+}
+.kcinfo-rdsq{
+  width: 1657px;
+	height: 700px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  margin-bottom: 28px;
+  padding:10px;
+  box-shadow: 0px 8px 25px 4px rgba(110, 110, 110, 0.18);
+  border-radius: 20px;
+}
+.rdsq-box{
+ width: 100%;
+}
+.rdsq-first{
+width: 381px;
+}
+.rdsq-xx{
+color: $baoshengcun;
+font-size: 32px;
+}
+.rdsq-title{
+width: 100%;
+color:$baoshengcun;
+font-size: 44px;
+font-weight: bold;
+margin:80px 0px 77px 0px;
+}
+.rdfzInfo-rdsq{
+width: 190px;
+height: 77px;
+color: #fffefe;
+font-size: 32px;
+text-align: center;
+background: #cb2321;
+margin-bottom: 25px;
+}
+.rdsq-img{
+width: 289PX;
+height: 374px;
+margin-right: 53px;
+}
+//入党申请 end
+//党员关系
+.ddgx-title,
+.zwzc-title{
+width: 193px;
+height: 79px;
+color:white;
+font-size: 32px;
+margin-bottom: 127px;
+margin-left: 66px;
+background: #cb2321;
+margin-top:192px;
+}
+.baoshengcun-main__ddgx{
+  margin: 138px 260px;
+  .ddgx-flex{
+    margin-bottom: 150px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+.ddgx-list{
+ width: 540px;
+ height: 160px;
+ border-radius: 18px;
+ font-size: 60px;
+ color: white;
+ background: $baoshengcun;
+ /* margin-bottom: 149px; */
+ box-shadow: 5px 6px 12px -4px #666;
+}
+.dyinfo-list{
+  p{
+    width: 100%;
+  }
+  font-size: 30px;
+ margin-bottom: 17px;
+}
+.dyinfo-list:last-child{
+ margin-bottom: 0px;
+}
+//党员关系 end
+//法律法规
+.flfg-box{
+  width: 834px;
+	height: 284px;
+	background-color: #ffffff;
+	box-shadow: 0px 8px 27px 1px rgba(110, 110, 110, 0.18);
+	border-radius: 20px;
+}
+.poorList{
+  width: 798px;
+  min-width: 723px;
+  background: #fff;
+  box-shadow: 0px 8px 27px 1px rgba(110, 110, 110, 0.18);
+  margin-bottom: 99px;
+  border-radius: 20px;
+  margin-right: 152px;
+  display: block;
+  &:nth-child(even){
+    margin-right: 0px;
+  }
+}
+.wgh-box{
+  box-sizing: border-box;
+  border-radius: 20px;
+  background:white;
+  width: 850px;
+  height: 287px !important;
+  display: flex;
+  box-shadow: 0px 8px 27px 1px rgba(110, 110, 110, 0.18);
+}
+.whg-box-s{
+  float: left;
+}
+.wgh-box__ul{
+ width: 100%;
+}
+
+.wgh-box__span{
+ font-weight: bold;
+}
+.wgh-box__li{
+  width: 100%;
+  margin-bottom: 13px;
+  font-size:28px;
+  color:$title;
+  display: -webkit-inline-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: normal;
+  word-break: break-all;
+ &:last-child{
+  margin-bottom: 0%;
+ }
+}
+
+.wgh-ul__span{
+ position: absolute;
+ right: 5%;
+ bottom: 14%;
+ color: $baoshengcun;
+ font-size: 25px;
+}
+.wghinfo-main{
+ margin-top:66px !important;
+}
+.wghinfo-main__box{
+ background: none !important;
+}
+.wghinfo-title{
+ color: $title;
+ font-size:$titleFontSize;
+ font-weight: bold;
+ margin-top:4%;
+}
+.wghinfo-bar{
+  font-size: 30px;
+  width: 100%;
+  height:618px;
+  padding:40px;
+  box-sizing: border-box;
+  min-height: 490px;
+  border-radius: 30px;
+  overflow-y: auto;
+//  background: url('../../../lib/images/bsc/boxBg.png');
+}
+.ss-active{
+  background-color: #ddab99 !important;
+}
+.wh-ss{
+  position: relative;
+}
+.wh-ss-nav{
+  position: absolute;
+  right: -179px;
+  top: 85px;
+}
+.ss-li{
+  width: 179px;
+	height: 65px;
+	background-color: #ffffff;
+	box-shadow: 0px 5px 38px 0px 
+    rgba(121, 37, 37, 0.23);
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 1px;
+	color: #b93837;
+  font-stretch: normal;
+  border-radius: 0px 10px 10px 0px;
+  transition: all .5s ease;
+}
+.whg-box-s:nth-child(odd){
+  margin-right: 55px;
+  margin-bottom: 50px;
+}
+.cwgkgqhd{
+  font-size: 64px !important;
+  width: 394px !important;
+  height: 150px !important;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 6px;
+}
+.flfg-box__img{
+ width: 171px;
+ height: 226px;
+ min-width: 171px;
+ margin: 29px;
+}
+.wgh-box__img{
+  width: 171px;
+  height: 229px;
+  min-width: 171px;
+  margin: 29px;
+}
+.flfg-box__title{
+font-size: 34px;
+color:#000;
+margin:21px 0 33px 0;
+}
+.flfg-box__con{
+  overflow-y: auto;
+  width: 70%;
+}
+.wgh-box__con{
+  width: 74%;
+  margin-top:23px;
+  position: relative;
+  }
+.b2bMarket-ul{
+ width: 100%;
+ padding-top: 27px;
+ height: 257px;
+//  margin-top:23px;
+}
+.b2bMarket-ul__first{
+  margin-right: 8%;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.b2bMarket-ul .b2bMarket-ul__li{
+  width: 100%;
+  line-height: 1.2;
+  font-size: 30px;
+  color: #565656;
+  margin-bottom: 25px;
+  display: -webkit-inline-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: normal;
+  word-break: break-all;
+  position: relative;
+}
+.title-tt{
+  width: 100%;
+  padding: 5px 5px 30px;
+  font-size: 32px;
+  color:$baoshengcun;
+}
+.b2b-o{
+  position: absolute;
+  right: 28px;
+  font-size: 28px;
+  color:$baoshengcun;
+}
+.b2b-s{
+  font-size: 25px;
+  color:$baoshengcun;
+  margin-left: 12px;
+}
+.b2bMarket-ul .b2bMarket-ul__li:last-child{
+ margin-bottom: 0;
+}
+.b2bMarket-ul__span{
+ display: inline-block;
+ font-weight: bold;
+//  width: 22%;
+ text-align: left;
+}
+.poor-ul__span{
+//  width: 33% !important;
+}
+.flfg-box__icon{
+ position: absolute;
+ right: 21px;
+ bottom: 77px;
+ color: $baoshengcun;
+ font-size: 26px;
+}
+.flfg-box__content{
+/* display: inline-block; */
+/* width: 100%; */
+color:#666;
+font-size: 27px;
+line-height: 1.5;
+display: -webkit-inline-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 4;
+overflow: hidden;
+word-wrap: break-word;
+word-break: break-all;
+box-sizing: content-box;
+}
+.flfg-box__time{
+color:#666565;
+font-size: 22px;
+margin-top:28px;
+}
+.baoshengcun-main__flfg{
+  margin:0 80px;
+  .wgh-flex{
+    margin-bottom: 80px;
+    .whg-a{
+      display: flex;
+      &:first-child{
+        margin-right: 61px;
+      }
+    }
+  }
+  .flfg-flex{
+    margin-bottom: 80px;
+    &:last-child{
+      // margin-bottom: 80px;
+    }
+  }
+  .poor-flex{
+    width: 100%;
+  }
+}
+.flfg-title{
+ height: 90px;
+ margin-bottom: 5%;
+ color: #cb2321;
+ font-size: 44px;
+ font-weight: bold;
+}
+.icon-right{
+  font-size: 20px;
+  color: #b93837;
+  margin-left: 10px;
+}
+//法律法规 end
+//城乡社区
+.baoshengcun-main__cxsqBox{
+  margin:196px 143px auto;
+  .cxsq-flex{
+    margin-bottom: 120px;
+    &:last-child{
+      margin-bottom: 50px;
+    }
+    .baoshengcun-main__cxsqList:nth-child(2){
+      margin:0 154px;
+    }
+  }
+  .baoshengcun-main__cxsqList{
+    width: 442px;
+    height: 131px;
+    color: white;
+    font-size: 38px;
+  }
+}
+.nullBox{
+  width: 100%;
+  font-size: 50px;
+  color: #b93837;
+  min-height: 637px;
+}
+.cwgkgqhd:nth-child(2),
+.cwgkgqhd:nth-child(5){
+  margin:0 225px !important;
+}
+
+.baoshengcun-main__listB2b .baoshengcun-main__link{
+width: 540px;
+height: 131px;
+color: white;
+font-size: 60px;
+border-radius: 18px !important;
+background: $baoshengcun;
+box-shadow: 5px 6px 12px -4px #666;
+}
+.cs-icon{
+  font-size: 60px;
+  margin-right: 30px;
+}
+.baoshengcun-main__cxsq{
+  width: 442px;
+  height: 131px;
+  color: white;
+  font-size: 49px;
+  border-radius: 18px !important;
+  background: $baoshengcun;
+  box-shadow: 5px 6px 12px -4px #666;
+}
+//城乡社区 end
+//政务政策
+.baoshengcun-main__zwzcList{
+  margin: 66px 150px 0;
+  .zwzcList-flex{
+    margin-bottom: 120px;
+    .zwzc-list:nth-child(2){
+      margin:0 120px;
+    }
+    .zwzc-list:nth-child(3){
+      margin-right:110px;
+    }
+    &:last-child{
+      margin-bottom: 100px;
+    }
+  }
+}
+.zwzc-list{
+  width: 327px;
+	height: 96px;
+	background-color: $baoshengcun;
+	box-shadow: 0px 12px 27px 0px	rgba(109, 10, 9, 0.45);
+  border-radius: 20px;
+  color: white;
+  font-size: 30px;
+  color: white;
+ // width: 339px;
+	// height: 120px;
+	// background-color: $baoshengcun;
+	// box-shadow: 0px 12px 27px 0px 
+	// 	rgba(109, 10, 9, 0.45);
+	// border-radius: 20px;
+}
+.icon-zwzc{
+  font-size: 53px;
+  margin-right: 30px;
+}
+/* odd 奇数行 even 偶数行 */
+//政务政策 end
+//十九大精神（文章详情）
+.userImg{
+max-width: 100%;
+width: 100%;
+margin-bottom: 25px;
+}
+.wzinfo-main{
+  // margin-left:53px;
+}
+/*  */
+.info{
+margin: 7% 0 3%;
+}
+.time{
+font-size: 28px;
+color:#cb2321;
+}
+.kcinfoWz-box{
+  // box-shadow: 0px 8px 27px 1px rgba(110, 110, 110, 0.55);
+  border-radius: 20px;
+  background: white;
+  overflow-y: auto;
+}
+.kcinfoWz{
+  margin: 0px 0 0 -2px;
+  max-width: 960px;
+  box-sizing: border-box;
+  width: 960px;
+  padding: 10px 30px;
+  height: 730px;
+  margin-bottom: 28px;
+  z-index:10;
+  position: relative;
+  overflow:auto;
+  // overflow-x: hidden;
+}
+.constent{
+  position: absolute;
+  z-index: 9;
+}
+// .kcinfoWz img{
+//   width: 100%;
+//   max-width: 100%;
+// }
+.df-e{
+  margin:0 58px;
+}
+.kcinfoWz-TheMasses{
+ width: 96%;
+ padding: 2%;
+ height: 620px;
+ margin-bottom: 28px;
+}
+.userInfo-wz{
+  width: 100%;
+  color: #b93837;
+  font-size: 24px;
+  text-align: left;
+}
+.wzhbg-box-s{
+  margin:0 195px !important;
+}
+.wzhbg{
+  height: 675px;
+  min-height: 675px;
+}
+//十九大精神（文章详情） end
+//产业发展
+.bsc-cyfz{
+margin:80px 70px auto;
+}
+.bsc-labor__cyfz__title{
+font-size: 52px;
+margin-bottom:10px;
+color:$baoshengcun;
+}
+.labor-list{
+font-family: 'PingFang SC';
+font-size: 28px;
+color: $title;
+}
+.labor-box{
+/* margin: 0px 38px 0 38px; */
+margin-top:60px;
+}
+.labor-img{
+width: 180px;
+height: 240px;
+margin-right: 50px;
+margin-bottom: 50px;
+}
+.bsc-labor__cyfz{
+ text-indent: 30px;
+word-wrap: break-word;
+word-break: break-all;
+box-sizing: border-box;
+width: 100%;
+padding: 4%;
+height:800px;
+max-height:800px;
+line-height: 1.8;
+font-size: 26px;
+color:$title;
+margin-top:20px;
+background: url('../../../lib/images/bsc/boxBg.png'); 
+overflow-y: auto;
+}
+.bsc-cyfzImg{
+ box-sizing: border-box;
+ width: 100%;
+ max-width: 100%;
+}
+.bsc-labor__cyfz::-webkit-scrollbar {
+  width:8px;
+  height:8px;
+}
+.bsc-labor__cyfz::-webkit-scrollbar-thumb {
+background-color: $baoshengcun;
+border-radius: 8px;
+}
+.bsc-liCyfz{
+width: 157px;
+height: 55px;
+color: $baoshengcun;
+border:1px solid $baoshengcun;
+font-size:$titleFontSize;
+border-bottom: none;
+}
+//产业发展 end
+//十九大精神
+.sjdjs-box{
+width: 798px;
+height: 285px;
+border-radius: 20px;
+background:#fff;
+}
+.sjdjs-box:nth-child(even){
+  // margin-right: 10%;
+}
+.sjdjs-box__img{
+  width: 228px;
+  height: 228px;
+  min-width: 228px;
+  margin: 30px 21px 0 21px;
+  object-fit: cover;
+}
+.sjdjs-box__title{
+  font-size: 27.75px;
+  color: #000;
+  margin: 21px 0 12px 0;
+  display: -webkit-inline-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 21px;
+  word-wrap: normal;
+  word-break: break-all;
+
+}
+.sjdjs-box__con{
+  position: relative;
+  padding-right: 2%;
+  width: 81%;
+  width: 510px;
+  overflow: hidden;
+}
+.sjdjs-box__icon{
+  position: absolute;
+  right: 8%;
+  bottom: -1px;
+  color: #b93837;
+  font-size: 13px;
+}
+.sjdjs-bo__span{
+ margin-right: 35px;
+}
+.sjdjs-main{
+  border-radius: 20px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0px 8px 27px 1px rgba(110, 110, 110, 0.18);
+}
+.sjdjs-box__content{
+  width: 100%;
+  color:#666;
+  font-size: 22.25px;
+  line-height: 1.4;
+  display: -webkit-inline-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 21px;
+  word-wrap: normal;
+  word-break: break-all;
+}
+.wzhbg-iframe{
+  width: 1529px;
+	height: 715px;
+	background-color: #ffffff;
+	box-shadow: 0px 8px 27px 1px rgba(110, 110, 110, 0.18);
+	border-radius: 20px;
+}
+.sjdjs-box__time{
+  position: absolute;
+  right: 2%;
+  bottom: 8%;
+  color: #666565;
+  font-size:21.76px;
+}
+.sjdjs-title{
+width: 180px;
+height: 90px;
+color:white;
+font-size: 32px;
+margin-bottom: 36px;
+background: #cb2321;
+}
+.sjdjs-title__ul{
+ width: 100%;
+}
+.sjdjs-title:nth-child(even){
+ margin:0px 15px;
+}
+//十九大精神 end
+//文化小康
+.baoshengcun-main__whxk{
+  margin:150px 122px 0 141px;
+  .whxk-flex{
+    margin-bottom: 120px;
+    .zwzc-list:nth-child(2){
+      margin:0 120px;
+    }
+    .zwzc-list:nth-child(3){
+      margin-right:110px;
+    }
+    &:last-child{
+      margin-bottom: 100px;
+    }
+  }
+}
+//文化小康 end
+//组织活动
+.zzActivity-li{
+// background: #fff;
+// margin-bottom: 35px;
+}
+.zzActivity-li:nth-child(odd){
+border-right: none !important;
+border-left: none !important;
+}
+.zzActivity-li:first-child{
+border-left: 1px solid #DDAB99 !important;
+}
+.zzActivity-li:last-child{
+// border-right: 1px solid $baoshengcun !important;
+}
+//组织活动 end
+//会议签到
+.meet-box{
+  margin:20px 584px auto;
+  &__main{
+    background: url('../../../lib/images/bsc/meeting.png');
+    width: 752px;
+    height: 734px;
+    position: relative;
+  }
+  &__title{
+    color: $baoshengcun;
+    font-size: 40px;
+  }
+  &__re{
+    width: 100%;
+    top: -85px;
+    position: absolute;
+  }
+  &__img{
+    width: 651px;
+    height: 651px;
+    margin:40px 49px;
+  }
+}
+//会议签到 end
+//电商集市
+.baoshengcun-main__b2b{
+margin-top:328px;
+}
+.baoshengcun-main__listB2b{
+  width: 540px;
+  height: 131px;
+  color: white;
+  font-size: 60px;
+  border-radius: 18px !important;
+  background: #b93837;
+  box-shadow: 5px 6px 12px -4px #666;
+}
+.baoshengcun-main__listB2b a{
+  width: 100%;
+  color: white;
+}
+.baoshengcun-main__listB2b:first-child{
+  margin-right: 309px;
+}
+//电商集市 end
+//群众积分
+.themjf-box{
+ width: 100%;
+ margin: 0px auto 39px;
+ padding: 26px 20px;
+ // height: 284px;
+ background: url('../../../lib/images/bsc/boxBg.png');
+}
+.themjf-box__main{
+  width: 498px;
+	height: 616px;
+	background-color: #ffffff;
+	box-shadow: 0px 8px 25px 4px 
+		rgba(110, 110, 110, 0.18);
+  border-radius: 20px;
+  margin-right: 24px;
+}
+.teme-sdf{
+  width: 498px;
+	height: 616px;
+}
+.wgh-e{
+  width: 1004px;
+	height: 618px;
+	background-color: #ffffff;
+	box-shadow: 0px 8px 27px 1px rgba(110, 110, 110, 0.18);
+	border-radius: 20px;
+}
+.themjf-first{
+ width: 100%;
+ /* width: 381px; */
+}
+.themjf-ul,.themjf-box__them{
+  width: 100%;
+}
+.themjf-box__last{
+ margin-left: 53px;
+ font-size: 30px;
+ font-weight: normal;
+ font-stretch: normal;
+ letter-spacing: 2px;
+}
+.themjf-box__last .themjf-ul{
+ margin-right: 30px;
+ height: 315px;
+ overflow: auto;
+}
+.baoshengcun-main__thema{
+ margin:66px 168px;
+}
+.thema-img {
+ width: 172px;
+ min-width: 172px;
+ height: 230px;
+ min-height: 230px;
+ margin: 35px 0 19px 64px;
+ object-fit: cover;
+}
+.tehs{
+  width: 1061px;
+	height: 616px;
+	background-color: #ffffff;
+	box-shadow: 0px 8px 27px 1px rgba(110, 110, 110, 0.18);
+  border-radius: 20px;
+  margin-bottom: 22px;
+}
+.t1{
+  width: 166px;
+	height: 48px;
+	background-color: $baoshengcun;
+  border-radius: 10px;
+	font-size: 23px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 2px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+//群众积分 end
+
+//干群互动
+.baoshengcun-main__gqhd{
+ margin:42px 150px;
+ border: none;
+}
+.gqhd-main{
+  border: none !important;
+}
+.gqhd-title{
+ color: white;
+ font-size: $titleFontSize;
+ background-color:$baoshengcun;
+ padding:2% 4%;
+ font-weight: normal;
+ width: auto;
+ display: inline-block;
+}
+.gqhd-icon-s{
+  display: block;
+  font-size: 80px;
+  margin-bottom: 19px;
+  color: $baoshengcun;
+}
+.gqhd-main{
+ width: 100%;
+ box-sizing: border-box;
+ border:1px solid $baoshengcun;
+ &__title{
+   width: 110px;
+   height: 135px;
+   margin-right: 30px;
+ }
+ &__span{
+   color:$baoshengcun;
+   font-size: 24px;
+ }
+ &__answer{
+  width: 1403px;
+  height: 204px;
+  background: white;
+  border-radius: 20px;
+   max-height: 204px;
+   padding:30px 38px;
+   line-height: 1;
+   font-size: $titleFontSize;
+   overflow-y: auto;
+ }
+ &__line{
+   width: 100%;
+   height: 20px;
+   background: #74271b;
+   opacity: .2;
+   margin:8% 0 8% 0;
+ }
+ .ss-d{
+   height: 350px;
+   min-height: 350px !important;
+   z-index: 1;
+ }
+ .ss-dss{
+   margin-bottom: 50px;
+   .gqhd-main__answer{
+    box-shadow: 10px 7px 21px 2px 
+  rgba(128, 27, 27, 0.27);
+   }
+ }
+ .answer-main{
+   overflow: hidden;
+ }
+}
+.fabulous-box{
+ padding:4%;
+ background: $baoshengcun;
+ border-radius: 50%;
+}
+.wghinfo-ul:last-child{
+ margin-right: 0;
+}
+.fabulous-icon{
+ font-size: 55px;
+ color:white;
+}
+//干群互动 end
+.footer{
+  width: 33% !important;
+}
+.baoshengcun-weather{
+  margin-right: 25px;
+}
+.iconfont-time{
+  font-size: 66px;
+  color:$baoshengcun;
+  margin-right: 8px;
+}
+.iconfont-weather{
+  color:$baoshengcun;
+  font-size: 55px;
+  margin-right: 5px;
+}
+.header-fa{
+  margin-right: 47px;
+}
+.header-span{
+  font-size: 18.54px;
+  color:$baoshengcun;
+  font-weight: bold;
+}
+// }
